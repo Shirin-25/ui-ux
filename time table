@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Time Table </title>
+</head>
+<body>
+    <h5> table</h5>
+    <table border="2"> 
+        <tr>
+            <th> </th>
+            <th>9.30-10.20</th>
+            <th>10.20-11.10</th>
+            <th>11.20-12.10</th>
+            <th>12.10-1.00</th>
+            <th>1.50-2.40</th>
+            <th>2.40-3.30</th>
+        </tr>
+        <tr>
+            <th> monday</th>
+            <td colspan="2">UI-UX Design/SE Lab/M-M Session</td>
+            <td colspan="2">EH&PT/DF Lab</td>
+            <td>AR</td>
+            <td>EVS</td>
+        </tr>
+        <tr>
+            <th> tuesday</th>
+            <td colspan="2">UI-UX Design/SE Lab/M-M Session</td>
+            <td>OS</td>
+            <td>SE</td>
+            <td> </td>
+            <td> </td>
+            
+        </tr>
+        <tr>
+            <th> wednesday</th>
+            <td>SPE 2</td>
+            <td>SE</td>
+            <td>OS</td>
+            <td>UI-UX Design</td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <th> Thursday</th>
+            <td>UI-UX Design</td>
+            <td>SPZ 1</td>
+            <td>EH&PT/DF Lab</td>
+            <td>SPZ 2</td>
+            <td>AR</td>
+        </tr>
+        <tr>
+            <th>Friday </th>
+            <td>SPZ 1</td>
+            <td>SPZ 2</td>
+            <td colspan="2">UI-UX Design/SE Lab/M-M Session</td>
+            <td>OS</td>
+            <td>SPZ 1</td>
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+            
+       
+    </table>
+    
+</body>
+</html>
