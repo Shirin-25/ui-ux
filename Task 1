@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>task1 </title>
+</head>
+<body>
+    <h1>Nested Unordered List</h1>
+    <ul type="dics">
+        <li> Programming  Languages</li>
+    </ul>
+    <ul type="circle">
+        <li>C</li>
+        <li>c++</li>
+        <li>JAVA</li>
+        <li>Python</li>
+    </ul> 
+    <ul type="disc">
+        <li>DSA</li>
+    </ul>   
+    <ul type="circle">
+        <li> Array</li>
+        <li>Linked List</li>
+        <li>Stack</li>
+        <li>Queue</li>
+        <li>Trees</li>
+        <li>Graphs</li>
+    </ul>
+    <ul type="disc">
+        <li>Web Technologies</li>
+    </ul>
+    <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    
+    <ul type="square">
+        <li>React</li>
+        <li>Angular</li>
+        <li>Vue</li>
+    
+    </ul>
+    <li> Bootstrap</li>
+    </ul>
+    
+
+    
+</body>
+</html>
