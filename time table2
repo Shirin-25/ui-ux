@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Time Table </title>
+</head>
+<body>
+    <h5> table</h5>
+    <table border="2"> 
+        <tr>
+            <th> </th>
+            <th>9.30-10.20</th>
+            <th>10.20-11.10</th>
+            <th>11.20-12.10</th>
+            <th>12.10-1.00</th>
+            <th>1.50-2.40</th>
+            <th>2.40-3.30</th>
+        </tr>
+        <tr>
+            <th> monday</th>
+            <td colspan="2">mm</td>
+            <td colspan="2">df</td>
+            <td>ar</td>
+            <td>evs</td>
+        </tr>
+        <tr>
+            <th> tuesday</th>
+            <td colspan="2">ui & ux</td>
+            <td>os</td>
+            <td>se</td>
+            
+        </tr>
+        <tr>
+            <th> wednesday</th>
+            <td>spz2</td>
+            <td>se</td>
+            <td>se</td>
+            
+       
+    </table>
+    
+</body>
+</html>
