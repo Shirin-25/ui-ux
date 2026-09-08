@@ -1,10 +1,11 @@
 <html>
     <head>
+        <link rel="stylesheet" href="cssprop.css">
         <h1> MY FEEDBACK FORM</h1>
     </head>
     <BODY>
         <FORM>
-            <label> Name: </label>
+            <label><center> Name: </label>
             <input type="text" > <br><br>
             <label> Email: </label>
             <input type="text"  > <br><br>
@@ -16,11 +17,11 @@
             <input type="checkbox" name="happy" value="happy"> Happy<br>
             <input type="checkbox" name="Ambivalent" value="Ambivalent"> Ambivalent<br>
             <B> How satisfied are you with our service?</B><BR>
-            <input type="radio" value="very satisfied"> very satisfied<br>
-            <input type="radio"  value="satisfied"> satisfied<br>
-            <input type="radio"  value="Didn't care"> Didn't care<br>
-            <input type="radio"  value="Dissatisfied"> Dissatisfied<br>
-            <input type="radio"  value=" Very Dissatisfied">  very Dissatisfied<br>
+            <input type="radio"  name="satisfaction" value="very satisfied"> very satisfied<br>
+            <input type="radio"  name="satisfaction" value="satisfied"> satisfied<br>
+            <input type="radio"  name="satisfaction" value="Didn't care"> Didn't care<br>
+            <input type="radio"  name="satisfaction" value="Dissatisfied"> Dissatisfied<br>
+            <input type="radio"  name="satisfaction" value=" Very Dissatisfied">  very Dissatisfied<br>
             <b> Further comments:</b>
             <textarea Name="name " rows=4 cols=50wrap>
             </textarea><br><br>
@@ -32,7 +33,8 @@
                 <option value="location">mumbai</option>
             <option> mangalore</option>
             <option> bangalore</option>
-            <option>mysore</option>
+            <option>mysore </option>
+            <option>Madikeri</option>
             </select><br><br>
 
             <input type="submit" value="submit">
