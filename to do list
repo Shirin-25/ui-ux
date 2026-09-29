@@ -2,15 +2,12 @@
 <html>
 <head>
     <title>To-Do List</title>
-
-    
 </head>
 
 <body>
+    <h2>Daily To-Do List</h2>
 
-    <h1>To-Do List</h1>
-
-    <input type="text" id="taskInput" placeholder="Enter a task">
+    <input type = "text" id="taskInput" placeholder="Add a new task">
     <button onclick="addTask()">Add</button>
 
     <ul id="taskList"></ul>
@@ -19,47 +16,41 @@
 
         function addTask() {
 
-            let input = document.getElementById("taskInput");
-            let task = input.value;
-
-            if (task === "") {
+            let task = document.getElementById("taskInput").value;
+            if (task == "") {
                 alert("Please enter a task");
                 return;
             }
+        let li = document.createElement("li");
+        let taskText = document.createElement("span");
+        taskText.textContent = task;
+        let editButton = document.createElement("button");
+        editButton.textContent = "Edit";
+        editButton.onclick = function() {
+            editTask(taskText);
+        };
+        let deleteButton = document.createElement("button");
+        deleteButton.textContent="Delete";
+        deleteButton.onclick = function() {
+            deleteTask(li);
+            
+        };
+        li.appendChild(taskText);
+        li.appendChild(editButton);
+        li.appendChild(deleteButton);
+        document.getElementById("taskList").appendChild(li);
+        document.getElementById("taskInput").value="";
+    }
+    function editTask(taskText) {
+        let newTask = prompt("Edit task:", taskText.textContent);
 
-            let li = document.createElement("li");
-
-            li.innerHTML = `
-                <span>${task}</span>
-                <button onclick="editTask(this)">Edit</button>
-                <button onclick="deleteTask(this)">Delete</button>
-            `;
-
-            document.getElementById("taskList").appendChild(li);
-
-            input.value = "";
+        if (newTask !=null && newTask !=""){
+            taskText.textContent = newTask;
         }
-
-        function editTask(button) {
-
-            let li = button.parentElement;
-            let span = li.querySelector("span");
-
-            let newTask = prompt("Edit your task:", span.innerText);
-
-            if (newTask !== null && newTask !== "") {
-                span.innerText = newTask;
-            }
-        }
-
-        function deleteTask(button) {
-
-            let li = button.parentElement;
-
-            li.remove();
-        }
-
+    }
+    function deleteTask(li) {
+        li.remove();
+    }
     </script>
-
 </body>
 </html>
