@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> fibonacci</title>
+    </head>
+    <body>
+        <h2> fibonacci</h2>
+        <input type="number" id="num" placeholder="enter a num">
+        <button onclick="fibonacci()"> check </button>
+        <p id="result"></p>
+        <script>
+            function fibonacci(){
+                let n=Number(document.getElementById("num").value);
+                let a=0,b=1,c;
+                let s="";
+                for(let i=1;i<=n;i++){
+                    s=s+a+"";
+                    c=a+b;
+                    a=b;
+                    b=c;
+                }
+                document.getElementById("result").innerHTML=s;
+            }
+        </script>
+
+    </body>
+</html>
